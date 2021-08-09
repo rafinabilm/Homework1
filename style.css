@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.8;
+    color: #9194a1;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 0 50px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+.hero .container .hero-text {
+    flex-basis: 50%;
+}
+
+.hero .container .hero-text .hero-tittle {
+    font-size: 2em;
+    color: #252b46 ;
+}
+
+.profile .container .profile-image {
+    flex-basis: 50%;
+}
+
+.profile .container .profile-image img {
+    width: 75%;
+    border-radius: 10px;
+}
+
+.profile .container .profile-text {
+    flex-basis: 40%;
+}
+
+.profile .container .profile-text .profile-title {
+    color: #252b46;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.profile .container .profile-text .row .col-name {
+    color: #023047;
+    margin-right: 10px;
+    font-weight: 550;
+}
